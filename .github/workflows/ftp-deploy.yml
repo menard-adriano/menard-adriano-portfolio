@@ -1,0 +1,22 @@
+name: Deploy to PHP host (FTP)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./Menard_Adriano_Portfolio/
+          server-dir: /menard-adriano-portfolio.site.je/htdocs/
+          exclude: |
+            build.php
+            dist/**
