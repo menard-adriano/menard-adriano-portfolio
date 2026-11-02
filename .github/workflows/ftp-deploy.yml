@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./Menard_Adriano_Portfolio/
-          server-dir: /menard-adriano-portfolio.site.je/htdocs/
+          server-dir: /htdocs/
           exclude: |
             **/.git*
             **/.git*/**
