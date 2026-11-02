@@ -18,5 +18,8 @@ jobs:
           local-dir: ./Menard_Adriano_Portfolio/
           server-dir: /menard-adriano-portfolio.site.je/htdocs/
           exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
             build.php
             dist/**
