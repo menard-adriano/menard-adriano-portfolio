@@ -22,10 +22,10 @@ jobs:
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
-      - run: php build.php
+      - run: php Menard_Adriano_Portfolio/build.php
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: Menard_Adriano_Portfolio/dist
 
   deploy:
     needs: build
