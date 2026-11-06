@@ -9,8 +9,8 @@ $site = [
 
     // contact
     'email'     => 'menard.adriano@outlook.com',
-    'phone'     => '09461601073',                 // leave '' to hide
-    'location'  => 'Valenzuela, Philippines',
+    'phone'     => '',
+    'location'  => 'Philippines',
 
     // social links
     'youtube'   => 'https://youtube.com/@deletedaccount7436',
